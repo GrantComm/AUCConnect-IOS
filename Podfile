@@ -7,6 +7,9 @@ target 'AUCConnect' do
 
   # Pods for AUCConnect
   pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Firestore'
+
   target 'AUCConnectTests' do
     inherit! :search_paths
     # Pods for testing
