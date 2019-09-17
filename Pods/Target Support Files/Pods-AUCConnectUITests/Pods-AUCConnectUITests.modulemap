@@ -1,0 +1,6 @@
+framework module Pods_AUCConnectUITests {
+  umbrella header "Pods-AUCConnectUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
