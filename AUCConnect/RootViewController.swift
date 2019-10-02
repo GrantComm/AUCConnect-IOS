@@ -17,6 +17,7 @@ class RootViewController: UIViewController, UIPageViewControllerDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         // Configure the page view controller and add it as a child view controller.
+        
         self.pageViewController = UIPageViewController(transitionStyle: .pageCurl, navigationOrientation: .horizontal, options: nil)
         self.pageViewController!.delegate = self
 
@@ -79,6 +80,27 @@ class RootViewController: UIViewController, UIPageViewControllerDelegate {
 
         return .mid
     }
+    
+    
+    @IBAction func registerClicked(_ sender: UIButton) {
+        let signUpManager = FirebaseAuthManager()
+        if let email = emailTextField.text, let password = passwordTextField.text {
+            signUpManager.createUser(email: email, password: password) {[weak self] (success) in
+                guard let `self` = self else { return }
+                var message: String = ""
+                if (success) {
+                    message = "User was sucessfully created."
+                } else {
+                    message = "There was an error."
+                }
+                let alertController = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+                alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+                self.display(alertController: alertController)
+            }
+        }
+    }
+    
+    
 
 
 }

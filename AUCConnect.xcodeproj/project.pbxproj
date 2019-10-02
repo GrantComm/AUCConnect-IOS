@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,6 +20,7 @@
 		ABA7E7C5232FD93D00DA93AC /* AUCConnectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7E7C4232FD93D00DA93AC /* AUCConnectTests.swift */; };
 		ABA7E7D0232FD93D00DA93AC /* AUCConnectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7E7CF232FD93D00DA93AC /* AUCConnectUITests.swift */; };
 		ABA7E7DE232FDD0A00DA93AC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ABA7E7DD232FDD0A00DA93AC /* GoogleService-Info.plist */; };
+		ABB87DEF23318E6A007B8F51 /* AuthenticationManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB87DEE23318E6A007B8F51 /* AuthenticationManger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		ABA7E7CF232FD93D00DA93AC /* AUCConnectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AUCConnectUITests.swift; sourceTree = "<group>"; };
 		ABA7E7D1232FD93D00DA93AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABA7E7DD232FDD0A00DA93AC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ABB87DEE23318E6A007B8F51 /* AuthenticationManger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthenticationManger.swift; path = ../../AuthenticationManger.swift; sourceTree = "<group>"; };
 		E36D0E35F07FEDF24E918DDF /* Pods_AUCConnectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AUCConnectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4D80E423CC3C63FEADD87FE /* Pods-AUCConnectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AUCConnectUITests.release.xcconfig"; path = "Target Support Files/Pods-AUCConnectUITests/Pods-AUCConnectUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F909E324227636A8C300F60D /* Pods_AUCConnectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AUCConnectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,7 +117,6 @@
 				3CA8F7AC2A07DC1A8D298EFF /* Pods-AUCConnectUITests.debug.xcconfig */,
 				E4D80E423CC3C63FEADD87FE /* Pods-AUCConnectUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -149,6 +150,7 @@
 				ABA7E7AF232FD93B00DA93AC /* DataViewController.swift */,
 				ABA7E7B1232FD93B00DA93AC /* ModelController.swift */,
 				ABA7E7B3232FD93B00DA93AC /* Main.storyboard */,
+				ABB87DEE23318E6A007B8F51 /* AuthenticationManger.swift */,
 				ABA7E7B6232FD93D00DA93AC /* Assets.xcassets */,
 				ABA7E7B8232FD93D00DA93AC /* LaunchScreen.storyboard */,
 				ABA7E7BB232FD93D00DA93AC /* Info.plist */,
@@ -398,6 +400,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABA7E7AE232FD93B00DA93AC /* RootViewController.swift in Sources */,
+				ABB87DEF23318E6A007B8F51 /* AuthenticationManger.swift in Sources */,
 				ABA7E7B2232FD93B00DA93AC /* ModelController.swift in Sources */,
 				ABA7E7B0232FD93B00DA93AC /* DataViewController.swift in Sources */,
 				ABA7E7AC232FD93B00DA93AC /* AppDelegate.swift in Sources */,

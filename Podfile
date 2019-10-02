@@ -6,7 +6,6 @@ target 'AUCConnect' do
   use_frameworks!
 
   # Pods for AUCConnect
-  pod 'Firebase/Core'
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
 
