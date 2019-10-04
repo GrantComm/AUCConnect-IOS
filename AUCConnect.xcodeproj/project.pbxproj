@@ -10,6 +10,10 @@
 		1F6F1A9C3433618A5C035741 /* Pods_AUCConnect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B488D8668EFE1DFAC586F43 /* Pods_AUCConnect.framework */; };
 		800667E4409F21CC1BE468E9 /* Pods_AUCConnectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E36D0E35F07FEDF24E918DDF /* Pods_AUCConnectTests.framework */; };
 		86FF171ADC422EA633CB88EB /* Pods_AUCConnectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F909E324227636A8C300F60D /* Pods_AUCConnectUITests.framework */; };
+		ABA3AAE42345A3F000DE6BCC /* registerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA3AAE32345A3F000DE6BCC /* registerViewController.swift */; };
+		ABA3AAE623462F7100DE6BCC /* profileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA3AAE523462F7100DE6BCC /* profileViewController.swift */; };
+		ABA3AAE82346F2A100DE6BCC /* searchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA3AAE72346F2A100DE6BCC /* searchViewController.swift */; };
+		ABA3AAEA2346F2B400DE6BCC /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA3AAE92346F2B400DE6BCC /* homeViewController.swift */; };
 		ABA7E7AC232FD93B00DA93AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7E7AB232FD93B00DA93AC /* AppDelegate.swift */; };
 		ABA7E7AE232FD93B00DA93AC /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7E7AD232FD93B00DA93AC /* RootViewController.swift */; };
 		ABA7E7B0232FD93B00DA93AC /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7E7AF232FD93B00DA93AC /* DataViewController.swift */; };
@@ -47,6 +51,10 @@
 		85802775DCA64180216A9AB4 /* Pods-AUCConnect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AUCConnect.debug.xcconfig"; path = "Target Support Files/Pods-AUCConnect/Pods-AUCConnect.debug.xcconfig"; sourceTree = "<group>"; };
 		9B488D8668EFE1DFAC586F43 /* Pods_AUCConnect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AUCConnect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A93F3E6EE6E637A236FA5FC9 /* Pods-AUCConnectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AUCConnectTests.debug.xcconfig"; path = "Target Support Files/Pods-AUCConnectTests/Pods-AUCConnectTests.debug.xcconfig"; sourceTree = "<group>"; };
+		ABA3AAE32345A3F000DE6BCC /* registerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerViewController.swift; sourceTree = "<group>"; };
+		ABA3AAE523462F7100DE6BCC /* profileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileViewController.swift; sourceTree = "<group>"; };
+		ABA3AAE72346F2A100DE6BCC /* searchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchViewController.swift; sourceTree = "<group>"; };
+		ABA3AAE92346F2B400DE6BCC /* homeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
 		ABA7E7A8232FD93B00DA93AC /* AUCConnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AUCConnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABA7E7AB232FD93B00DA93AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABA7E7AD232FD93B00DA93AC /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -147,6 +155,10 @@
 			children = (
 				ABA7E7AB232FD93B00DA93AC /* AppDelegate.swift */,
 				ABA7E7AD232FD93B00DA93AC /* RootViewController.swift */,
+				ABA3AAE32345A3F000DE6BCC /* registerViewController.swift */,
+				ABA3AAE523462F7100DE6BCC /* profileViewController.swift */,
+				ABA3AAE72346F2A100DE6BCC /* searchViewController.swift */,
+				ABA3AAE92346F2B400DE6BCC /* homeViewController.swift */,
 				ABA7E7AF232FD93B00DA93AC /* DataViewController.swift */,
 				ABA7E7B1232FD93B00DA93AC /* ModelController.swift */,
 				ABA7E7B3232FD93B00DA93AC /* Main.storyboard */,
@@ -400,8 +412,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABA7E7AE232FD93B00DA93AC /* RootViewController.swift in Sources */,
+				ABA3AAEA2346F2B400DE6BCC /* homeViewController.swift in Sources */,
 				ABB87DEF23318E6A007B8F51 /* AuthenticationManger.swift in Sources */,
+				ABA3AAE82346F2A100DE6BCC /* searchViewController.swift in Sources */,
+				ABA3AAE623462F7100DE6BCC /* profileViewController.swift in Sources */,
 				ABA7E7B2232FD93B00DA93AC /* ModelController.swift in Sources */,
+				ABA3AAE42345A3F000DE6BCC /* registerViewController.swift in Sources */,
 				ABA7E7B0232FD93B00DA93AC /* DataViewController.swift in Sources */,
 				ABA7E7AC232FD93B00DA93AC /* AppDelegate.swift in Sources */,
 			);
