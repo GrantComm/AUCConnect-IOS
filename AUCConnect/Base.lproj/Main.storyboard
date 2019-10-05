@@ -13,7 +13,7 @@
         <!--Sign In-->
         <scene sceneID="Rac-vH-IWk">
             <objects>
-                <viewController storyboardIdentifier="Sign in" title="Sign In" id="MkA-vt-tkk" customClass="RootViewController" customModule="AUCConnect" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Sign in" title="Sign In" useStoryboardIdentifierAsRestorationIdentifier="YES" id="MkA-vt-tkk" customClass="signinViewController" customModule="AUCConnect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zsp-nJ-oq5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -61,7 +61,6 @@
                                             <color key="titleColor" red="0.2156862745" green="0.2156862745" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="signInPressed:forEvent:" destination="MkA-vt-tkk" eventType="touchUpInside" id="Wp6-jG-bco"/>
                                             <segue destination="yEd-PN-ZRC" kind="show" id="w0V-DS-YaA"/>
                                         </connections>
                                     </button>
@@ -87,8 +86,8 @@
                         <viewLayoutGuide key="safeArea" id="CiJ-NN-P6x"/>
                     </view>
                     <connections>
-                        <outlet property="emailSignInTextField" destination="0mn-E1-dIg" id="Y3N-wM-iht"/>
-                        <outlet property="passwordSignInTextField" destination="xGp-Xk-WWI" id="Job-9c-sZW"/>
+                        <outlet property="emailSignInTextField" destination="0mn-E1-dIg" id="h7k-xg-Xmp"/>
+                        <outlet property="passwordSignInTextField" destination="xGp-Xk-WWI" id="yzR-Su-ddd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7zg-5p-gsi" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -98,7 +97,7 @@
         <!--Register-->
         <scene sceneID="dFa-Yt-Obf">
             <objects>
-                <viewController storyboardIdentifier="Register" title="Register" id="UGc-5a-TkS" customClass="registerViewController" customModule="AUCConnect" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Register" title="Register" useStoryboardIdentifierAsRestorationIdentifier="YES" id="UGc-5a-TkS" customClass="registerViewController" customModule="AUCConnect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5JT-qw-syB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -203,7 +202,7 @@
         <!--Profile-->
         <scene sceneID="LoB-9W-sri">
             <objects>
-                <viewController storyboardIdentifier="Profile" title="Profile" id="yEd-PN-ZRC" customClass="profileViewController" customModule="AUCConnect" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Profile" title="Profile" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yEd-PN-ZRC" customClass="profileViewController" customModule="AUCConnect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Eb6-WE-CIf" customClass="Profile">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -302,7 +301,7 @@
         <!--Search -->
         <scene sceneID="9fm-dD-pZQ">
             <objects>
-                <viewController storyboardIdentifier="Search " title="Search " id="R4Q-Qt-Sos" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Search " title="Search " useStoryboardIdentifierAsRestorationIdentifier="YES" id="R4Q-Qt-Sos" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="n6g-Mk-Ges">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -389,7 +388,7 @@
         <!--Home-->
         <scene sceneID="Sa9-5q-1qL">
             <objects>
-                <viewController storyboardIdentifier="Home" title="Home" id="DM3-Yc-NEp" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Home" title="Home" useStoryboardIdentifierAsRestorationIdentifier="YES" id="DM3-Yc-NEp" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZEK-zt-Wey">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -455,8 +454,8 @@
         <image name="auclogo" width="182" height="183"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="vBc-E3-z8Z"/>
-        <segue reference="e4v-i0-pdx"/>
-        <segue reference="ivu-N2-Jq9"/>
+        <segue reference="ybK-yy-cXB"/>
+        <segue reference="BLE-RI-0go"/>
+        <segue reference="w0V-DS-YaA"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -7,15 +7,8 @@
 //
 
 import UIKit
-import Firebase
-
 class RootViewController: UIViewController, UIPageViewControllerDelegate {
-
     var pageViewController: UIPageViewController?
-
-    @IBOutlet weak var emailSignInTextField: UITextField!
-    
-    @IBOutlet weak var passwordSignInTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -85,29 +78,6 @@ class RootViewController: UIViewController, UIPageViewControllerDelegate {
         return .mid
     }
  
-    
-    @IBAction func signInPressed(_ sender: Any, forEvent event: UIEvent) {
-        guard let email = self.emailSignInTextField.text, let password = self.passwordSignInTextField.text else {
-            self.showMessagePrompt("email/password can't be empty")
-            return
-        }
-        showSpinner {
-            // [START headless_email_auth]
-            Auth.auth().signIn(withEmail: email, password: password) { [weak self] user, error in
-                guard let strongSelf = self else { return }
-                // [START_EXCLUDE]
-                strongSelf.hideSpinner {
-                    if let error = error {
-                        strongSelf.showMessagePrompt(error.localizedDescription)
-                        return
-                    }
-                    strongSelf.navigationController?.popViewController(animated: true)
-                }
-                // [END_EXCLUDE]
-            }
-            // [END headless_email_auth]
-        }
-    }
-    
 }
+
 

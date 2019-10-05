@@ -36,7 +36,7 @@ class registerViewController: UIViewController {
                 }
                 let alertController = UIAlertController(title: nil, message: message, preferredStyle: .alert)
                 alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
-                self.present(alertController, animated: true)
+                self.present(alertController, animated: true, completion: nil)
                 
             }
         }
