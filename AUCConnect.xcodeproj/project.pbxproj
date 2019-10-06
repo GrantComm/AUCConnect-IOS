@@ -157,6 +157,7 @@
 			children = (
 				ABA7E7AB232FD93B00DA93AC /* AppDelegate.swift */,
 				ABA7E7AD232FD93B00DA93AC /* RootViewController.swift */,
+				ABA3AAEB2348EA4700DE6BCC /* signinViewController.swift */,
 				ABA3AAE32345A3F000DE6BCC /* registerViewController.swift */,
 				ABA3AAE523462F7100DE6BCC /* profileViewController.swift */,
 				ABA3AAE72346F2A100DE6BCC /* searchViewController.swift */,
@@ -169,7 +170,6 @@
 				ABA7E7B8232FD93D00DA93AC /* LaunchScreen.storyboard */,
 				ABA7E7BB232FD93D00DA93AC /* Info.plist */,
 				ABA7E7DD232FDD0A00DA93AC /* GoogleService-Info.plist */,
-				ABA3AAEB2348EA4700DE6BCC /* signinViewController.swift */,
 			);
 			path = AUCConnect;
 			sourceTree = "<group>";
