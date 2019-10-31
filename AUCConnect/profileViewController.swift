@@ -7,11 +7,15 @@
 //
 
 import UIKit
-
+import Firebase
 class profileViewController: UIViewController {
+  //variables
+    
     @IBOutlet weak var profilePic: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         profilePic.layer.masksToBounds = true
         profilePic.layer.cornerRadius = profilePic.bounds.width / 2
         // Do any additional setup after loading the view.

@@ -62,7 +62,6 @@
                                         </state>
                                         <connections>
                                             <action selector="tappedSignIn:forEvent:" destination="MkA-vt-tkk" eventType="touchUpInside" id="jR4-wC-vKb"/>
-                                            <segue destination="yEd-PN-ZRC" kind="show" id="w0V-DS-YaA"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an Account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rjy-V1-8Br">
@@ -77,11 +76,22 @@
                                             <color key="titleColor" red="0.2156862745" green="0.2156862745" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="UGc-5a-TkS" kind="show" id="v9B-cy-oJ4"/>
+                                            <segue destination="UGc-5a-TkS" kind="show" id="5Dg-fI-gCo"/>
                                         </connections>
                                     </button>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QIs-hZ-Hd6">
+                                <rect key="frame" x="110" y="712" width="210" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <state key="normal" title="KOLODATEST">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="SBo-IA-c4y" kind="show" id="B9p-kC-o4U"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.75294117650000003" green="0.69803921570000005" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="CiJ-NN-P6x"/>
@@ -104,7 +114,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="0jy-M5-BBm">
-                                <rect key="frame" x="82" y="151" width="250" height="595"/>
+                                <rect key="frame" x="82" y="151" width="250" height="428"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xe4-ys-iXJ">
@@ -114,16 +124,16 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="auclogo" translatesAutoresizingMaskIntoConstraints="NO" id="ueJ-c9-Zke">
-                                        <rect key="frame" x="34" y="56.5" width="182" height="183"/>
+                                        <rect key="frame" x="117" y="56.5" width="16" height="16"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mhi-Le-fN7">
-                                        <rect key="frame" x="104.5" y="257.5" width="41" height="20.5"/>
+                                        <rect key="frame" x="104.5" y="90.5" width="41" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.2156862745" green="0.2156862745" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" restorationIdentifier="emailTextField" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KWx-Gw-CEr" userLabel="emailTextField">
-                                        <rect key="frame" x="0.0" y="296" width="250" height="30"/>
+                                        <rect key="frame" x="0.0" y="129" width="250" height="30"/>
                                         <accessibility key="accessibilityConfiguration" identifier="emailTextField" label="emailTextField"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="250" id="de9-T5-Wa3"/>
@@ -133,13 +143,13 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WBp-g2-xWb">
-                                        <rect key="frame" x="88" y="344" width="74" height="20.5"/>
+                                        <rect key="frame" x="88" y="177" width="74" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.2156862745" green="0.2156862745" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" restorationIdentifier="passwordTextField" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ODd-QW-keF" userLabel="passwordTextField">
-                                        <rect key="frame" x="0.0" y="382.5" width="250" height="30"/>
+                                        <rect key="frame" x="0.0" y="215.5" width="250" height="30"/>
                                         <accessibility key="accessibilityConfiguration" identifier="passwordTextField" label="passwordTextField"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="250" id="DkO-Wc-yfa"/>
@@ -149,13 +159,13 @@
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J1F-6K-1Cr">
-                                        <rect key="frame" x="55.5" y="430.5" width="139.5" height="20.5"/>
+                                        <rect key="frame" x="55.5" y="263.5" width="139.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.2156862745" green="0.2156862745" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D0R-8C-CLV">
-                                        <rect key="frame" x="0.0" y="469" width="250" height="30"/>
+                                        <rect key="frame" x="0.0" y="302" width="250" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="250" id="94h-jk-xHe"/>
                                         </constraints>
@@ -164,17 +174,16 @@
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ou6-NY-kXA">
-                                        <rect key="frame" x="96.5" y="517" width="57" height="30"/>
+                                        <rect key="frame" x="96.5" y="350" width="57" height="30"/>
                                         <state key="normal" title="Register">
                                             <color key="titleColor" red="0.21568627450980393" green="0.21568627450980393" blue="0.21568627450980393" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="registerClick:forEvent:" destination="UGc-5a-TkS" eventType="touchUpInside" id="Ez1-KH-hY0"/>
-                                            <segue destination="yEd-PN-ZRC" kind="show" id="U2k-tu-wbR"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kbz-Cg-aAx">
-                                        <rect key="frame" x="108" y="565" width="34" height="30"/>
+                                        <rect key="frame" x="108" y="398" width="34" height="30"/>
                                         <state key="normal" title="Back">
                                             <color key="titleColor" red="0.2156862745" green="0.2156862745" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -285,7 +294,9 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IMG_1546" translatesAutoresizingMaskIntoConstraints="NO" id="xJG-EU-nsD" userLabel="profilePic">
                                 <rect key="frame" x="127" y="239" width="161" height="172"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" identifier="profilePic" label="profilePic"/>
+                                <accessibility key="accessibilityConfiguration" identifier="profilePic" label="profilePic">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.75294117650000003" green="0.69803921570000005" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -349,14 +360,6 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <searchBar contentMode="redraw" fixedFrame="YES" restorationIdentifier="SearchBar" placeholder="Search " translatesAutoresizingMaskIntoConstraints="NO" id="O3s-FG-py5" userLabel="SearchBar">
-                                <rect key="frame" x="0.0" y="144" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <outlet property="delegate" destination="R4Q-Qt-Sos" id="yCH-d6-Mph"/>
-                                </connections>
-                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" red="0.75294117650000003" green="0.69803921570000005" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="jOY-1l-y0m"/>
@@ -377,7 +380,6 @@
                 <searchDisplayController id="qz4-A7-9Ue">
                     <connections>
                         <outlet property="delegate" destination="R4Q-Qt-Sos" id="2uR-U0-zSN"/>
-                        <outlet property="searchBar" destination="O3s-FG-py5" id="LjE-8H-3k9"/>
                         <outlet property="searchContentsController" destination="R4Q-Qt-Sos" id="8Yr-jY-ZdO"/>
                         <outlet property="searchResultsDataSource" destination="R4Q-Qt-Sos" id="VN2-YS-f00"/>
                         <outlet property="searchResultsDelegate" destination="R4Q-Qt-Sos" id="Mgs-Vi-ceP"/>
@@ -389,8 +391,8 @@
         <!--Home-->
         <scene sceneID="Sa9-5q-1qL">
             <objects>
-                <viewController storyboardIdentifier="Home" title="Home" useStoryboardIdentifierAsRestorationIdentifier="YES" id="DM3-Yc-NEp" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ZEK-zt-Wey">
+                <viewController storyboardIdentifier="Home" title="Home" useStoryboardIdentifierAsRestorationIdentifier="YES" id="DM3-Yc-NEp" customClass="homeViewController" customModule="AUCConnect" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZEK-zt-Wey" customClass="KolodaView" customModule="Koloda">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -448,6 +450,25 @@
             </objects>
             <point key="canvasLocation" x="-78.260869565217391" y="1277.6785714285713"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="nZ9-AU-tKY">
+            <objects>
+                <viewController id="SBo-IA-c4y" customClass="ViewController" customModule="AUCConnect" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="k9P-tr-rJl" customClass="KolodaView" customModule="Koloda">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.75294117650000003" green="0.69803921570000005" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <directionalEdgeInsets key="directionalLayoutMargins" top="0.0" leading="20" bottom="0.0" trailing="20"/>
+                        <viewLayoutGuide key="safeArea" id="Mbs-QM-yxH"/>
+                    </view>
+                    <connections>
+                        <outlet property="kolodaView" destination="k9P-tr-rJl" id="MHI-cM-0m2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lHf-Rv-EEj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="885.50724637681162" y="1400.8928571428571"/>
+        </scene>
     </scenes>
     <resources>
         <image name="IMG_1546" width="849" height="1208"/>
@@ -456,7 +477,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="ybK-yy-cXB"/>
-        <segue reference="BLE-RI-0go"/>
-        <segue reference="w0V-DS-YaA"/>
+        <segue reference="e4v-i0-pdx"/>
+        <segue reference="F4s-Hp-xH7"/>
     </inferredMetricsTieBreakers>
 </document>

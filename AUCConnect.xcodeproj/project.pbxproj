@@ -26,6 +26,7 @@
 		ABA7E7D0232FD93D00DA93AC /* AUCConnectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7E7CF232FD93D00DA93AC /* AUCConnectUITests.swift */; };
 		ABA7E7DE232FDD0A00DA93AC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ABA7E7DD232FDD0A00DA93AC /* GoogleService-Info.plist */; };
 		ABB87DEF23318E6A007B8F51 /* AuthenticationManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB87DEE23318E6A007B8F51 /* AuthenticationManger.swift */; };
+		ABFBC562235130A300A19C10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFBC561235130A300A19C10 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		ABA7E7D1232FD93D00DA93AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABA7E7DD232FDD0A00DA93AC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ABB87DEE23318E6A007B8F51 /* AuthenticationManger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthenticationManger.swift; path = ../../AuthenticationManger.swift; sourceTree = "<group>"; };
+		ABFBC561235130A300A19C10 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E36D0E35F07FEDF24E918DDF /* Pods_AUCConnectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AUCConnectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4D80E423CC3C63FEADD87FE /* Pods-AUCConnectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AUCConnectUITests.release.xcconfig"; path = "Target Support Files/Pods-AUCConnectUITests/Pods-AUCConnectUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F909E324227636A8C300F60D /* Pods_AUCConnectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AUCConnectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -170,6 +172,7 @@
 				ABA7E7B8232FD93D00DA93AC /* LaunchScreen.storyboard */,
 				ABA7E7BB232FD93D00DA93AC /* Info.plist */,
 				ABA7E7DD232FDD0A00DA93AC /* GoogleService-Info.plist */,
+				ABFBC561235130A300A19C10 /* ViewController.swift */,
 			);
 			path = AUCConnect;
 			sourceTree = "<group>";
@@ -418,6 +421,7 @@
 				ABA3AAEA2346F2B400DE6BCC /* homeViewController.swift in Sources */,
 				ABB87DEF23318E6A007B8F51 /* AuthenticationManger.swift in Sources */,
 				ABA3AAE82346F2A100DE6BCC /* searchViewController.swift in Sources */,
+				ABFBC562235130A300A19C10 /* ViewController.swift in Sources */,
 				ABA3AAE623462F7100DE6BCC /* profileViewController.swift in Sources */,
 				ABA7E7B2232FD93B00DA93AC /* ModelController.swift in Sources */,
 				ABA3AAEC2348EA4700DE6BCC /* signinViewController.swift in Sources */,

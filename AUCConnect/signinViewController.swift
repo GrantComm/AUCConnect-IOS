@@ -23,14 +23,22 @@ class signinViewController: UIViewController {
     
     @IBAction func tappedSignIn(_ sender: UIButton, forEvent event: UIEvent) {
         let loginManager = FirebaseAuthManager()
-        guard let email = emailSignInTextField.text, let password = emailSignInTextField.text else { return }
+        
+        let alert = UIAlertController(title: nil, message: "Email/Password cannot be empty", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+        
+        guard let email = emailSignInTextField.text, let password = passwordSignInTextField.text else {
+            return }
+        if(email == "" || password == ""){
+            self.present(alert, animated: true, completion: nil)
+        }
         loginManager.signIn(email: email, pass: password) {[weak self] (success) in
             guard let `self` = self else { return }
             var message: String = ""
             if (success) {
-                message = "User was sucessfully logged in."
+                message = "Welcome Back!"
             } else {
-                message = "There was an error."
+                message = "We don't know who you are. Please try again."
             }
             let alertController = UIAlertController(title: nil, message: message, preferredStyle: .alert)
             alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
