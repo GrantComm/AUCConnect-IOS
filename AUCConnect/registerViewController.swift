@@ -21,17 +21,37 @@ class registerViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    func isValidEmail(testEmail:String, domain:String) -> Bool {
+        
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[\(domain)]+\\.[edu]{3,\(domain.count)}"
+        let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        let result = emailTest.evaluate(with: testEmail)
+        return result
+        
+    }
     
     @IBAction func registerClick(_ sender: Any, forEvent event: UIEvent) {
         print("Hello World")
+        let domainM = "morehouse"
+        let domainS = "spelman"
+        let domainC = "cau"
         let signUpManager = FirebaseAuthManager()
         if let email = emailTextField.text, let password = passwordTextField.text {
             signUpManager.createUser(email: email, password: password) {[weak self] (success) in
                 guard let `self` = self else { return }
                 var message: String = ""
                 if (success) {
-                    message = "User was sucessfully created."
-                } else {
+                    if(self.isValidEmail(testEmail: email, domain: domainM) == true){
+                        message = "Morehouse user was sucessfully created."
+                    }
+                    if(self.isValidEmail(testEmail: email, domain: domainS) == true){
+                        message = "Spelman user was sucessfully created."
+                    }
+                    if(self.isValidEmail(testEmail: email, domain: domainC) == true){
+                        message = "Clark Atlanta user was sucessfully created."
+                    }
+                }
+                else {
                     message = "There was an error."
                 }
                 let alertController = UIAlertController(title: nil, message: message, preferredStyle: .alert)
@@ -54,3 +74,4 @@ class registerViewController: UIViewController {
     */
 
 }
+

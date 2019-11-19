@@ -12,8 +12,9 @@ class signinViewController: UIViewController {
 
     
     @IBOutlet weak var emailSignInTextField: UITextField!
-    
     @IBOutlet weak var passwordSignInTextField: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,9 +24,9 @@ class signinViewController: UIViewController {
     
     @IBAction func tappedSignIn(_ sender: UIButton, forEvent event: UIEvent) {
         let loginManager = FirebaseAuthManager()
-        
         let alert = UIAlertController(title: nil, message: "Email/Password cannot be empty", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+        var message: String = ""
         
         guard let email = emailSignInTextField.text, let password = passwordSignInTextField.text else {
             return }
@@ -34,16 +35,22 @@ class signinViewController: UIViewController {
         }
         loginManager.signIn(email: email, pass: password) {[weak self] (success) in
             guard let `self` = self else { return }
-            var message: String = ""
             if (success) {
+                /*
                 message = "Welcome Back!"
+                let alertController = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+                alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+                self.present(alertController, animated: true, completion: nil)
+                */
+                self.performSegue(withIdentifier: "profileView", sender: self)
             } else {
                 message = "We don't know who you are. Please try again."
+                let alertController = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+                alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+                self.present(alertController, animated: true, completion: nil)
             }
-            let alertController = UIAlertController(title: nil, message: message, preferredStyle: .alert)
-            alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
            // self.display(alertController: alertController)
-            self.present(alertController, animated: true, completion: nil)
+            
             
         }
     }
