@@ -36,12 +36,6 @@ class signinViewController: UIViewController {
         loginManager.signIn(email: email, pass: password) {[weak self] (success) in
             guard let `self` = self else { return }
             if (success) {
-                /*
-                message = "Welcome Back!"
-                let alertController = UIAlertController(title: nil, message: message, preferredStyle: .alert)
-                alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
-                self.present(alertController, animated: true, completion: nil)
-                */
                 self.performSegue(withIdentifier: "profileView", sender: self)
             } else {
                 message = "We don't know who you are. Please try again."
@@ -49,8 +43,6 @@ class signinViewController: UIViewController {
                 alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
                 self.present(alertController, animated: true, completion: nil)
             }
-           // self.display(alertController: alertController)
-            
             
         }
     }
