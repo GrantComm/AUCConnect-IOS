@@ -57,8 +57,10 @@
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8oL-zb-7Sk">
                                         <rect key="frame" x="101.5" y="374" width="47" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
                                         <state key="normal" title="Sign In">
-                                            <color key="titleColor" red="0.2156862745" green="0.2156862745" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="tappedSignIn:forEvent:" destination="MkA-vt-tkk" eventType="touchUpInside" id="jR4-wC-vKb"/>
@@ -72,8 +74,9 @@
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vi4-Lh-e27">
                                         <rect key="frame" x="96.5" y="460.5" width="57" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Register">
-                                            <color key="titleColor" red="0.2156862745" green="0.2156862745" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <segue destination="UGc-5a-TkS" kind="show" id="5Dg-fI-gCo"/>
@@ -81,24 +84,15 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QIs-hZ-Hd6">
-                                <rect key="frame" x="110" y="712" width="210" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
-                                <state key="normal" title="KOLODATEST">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="SBo-IA-c4y" kind="show" id="B9p-kC-o4U"/>
-                                </connections>
-                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.75294117650000003" green="0.69803921570000005" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <viewLayoutGuide key="safeArea" id="CiJ-NN-P6x"/>
                     </view>
                     <connections>
                         <outlet property="emailSignInTextField" destination="0mn-E1-dIg" id="h7k-xg-Xmp"/>
                         <outlet property="passwordSignInTextField" destination="xGp-Xk-WWI" id="yzR-Su-ddd"/>
+                        <outlet property="roundedRegister" destination="Vi4-Lh-e27" id="ivX-jD-333"/>
+                        <outlet property="roundedSignIn" destination="8oL-zb-7Sk" id="kcu-Cs-JHl"/>
                         <segue destination="yEd-PN-ZRC" kind="show" identifier="profileView" id="Vqa-s6-Prq"/>
                     </connections>
                 </viewController>
@@ -176,8 +170,9 @@
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ou6-NY-kXA">
                                         <rect key="frame" x="96.5" y="517" width="57" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Register">
-                                            <color key="titleColor" red="0.21568627450980393" green="0.21568627450980393" blue="0.21568627450980393" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="registerClick:forEvent:" destination="UGc-5a-TkS" eventType="touchUpInside" id="Ez1-KH-hY0"/>
@@ -185,8 +180,10 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kbz-Cg-aAx">
                                         <rect key="frame" x="108" y="565" width="34" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Back">
-                                            <color key="titleColor" red="0.2156862745" green="0.2156862745" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <segue destination="MkA-vt-tkk" kind="show" id="Hyh-Ad-mJR"/>
@@ -196,8 +193,8 @@
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.75294117647058822" green="0.69803921568627447" blue="0.51372549019607838" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="tintColor" red="1" green="0.67661709399548498" blue="0.79305429443311848" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="HA1-wJ-ZSq"/>
                     </view>
                     <connections>
@@ -299,12 +296,25 @@
                                 <color key="textColor" red="0.2156862745" green="0.2156862745" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BUU-xq-m7B">
+                                <rect key="frame" x="181" y="609" width="52" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Logout ">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="signout:" destination="yEd-PN-ZRC" eventType="touchUpInside" id="OE3-4Y-e7i"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.75294117650000003" green="0.69803921570000005" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <viewLayoutGuide key="safeArea" id="boI-NS-KTW"/>
                     </view>
                     <connections>
                         <outlet property="profilePic" destination="xJG-EU-nsD" id="L9Q-yP-zb1"/>
+                        <outlet property="roundedLogout" destination="BUU-xq-m7B" id="9BI-BE-tsb"/>
+                        <outlet property="userName" destination="dZG-AD-UvF" id="P4E-Vo-pWQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JXy-vm-xTq" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -362,7 +372,7 @@
                                 </items>
                             </toolbar>
                         </subviews>
-                        <color key="backgroundColor" red="0.75294117650000003" green="0.69803921570000005" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <viewLayoutGuide key="safeArea" id="jOY-1l-y0m"/>
                     </view>
                     <connections>
@@ -443,32 +453,13 @@
                                 </items>
                             </toolbar>
                         </subviews>
-                        <color key="backgroundColor" red="0.75294117650000003" green="0.69803921570000005" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <viewLayoutGuide key="safeArea" id="V5A-HM-KVn"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I9a-oe-n6M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-78.260869565217391" y="1277.6785714285713"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="nZ9-AU-tKY">
-            <objects>
-                <viewController id="SBo-IA-c4y" customClass="ViewController" customModule="AUCConnect" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="k9P-tr-rJl" customClass="KolodaView" customModule="Koloda">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.75294117650000003" green="0.69803921570000005" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <directionalEdgeInsets key="directionalLayoutMargins" top="0.0" leading="20" bottom="0.0" trailing="20"/>
-                        <viewLayoutGuide key="safeArea" id="Mbs-QM-yxH"/>
-                    </view>
-                    <connections>
-                        <outlet property="kolodaView" destination="k9P-tr-rJl" id="MHI-cM-0m2"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lHf-Rv-EEj" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="885.50724637681162" y="1400.8928571428571"/>
         </scene>
     </scenes>
     <resources>

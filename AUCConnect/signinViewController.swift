@@ -10,6 +10,9 @@ import UIKit
 import Firebase
 class signinViewController: UIViewController {
 
+    @IBOutlet weak var roundedRegister: UIButton!
+    
+    @IBOutlet weak var roundedSignIn: UIButton!
     
     @IBOutlet weak var emailSignInTextField: UITextField!
     @IBOutlet weak var passwordSignInTextField: UITextField!
@@ -17,11 +20,21 @@ class signinViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //Render the Register Button
+        roundedRegister.layer.cornerRadius = 10
+        roundedRegister.contentEdgeInsets = UIEdgeInsets(top: 5,left: 5,bottom: 5,right: 5)
+        //Render the Sign In Button 
+        roundedSignIn.layer.cornerRadius = 10
+        roundedSignIn.contentEdgeInsets = UIEdgeInsets(top: 5,left: 5,bottom: 5,right: 5)
+        //Render the Email Textfield
+        emailSignInTextField.layer.cornerRadius = 10
+        //Render the Password Text Field
+        passwordSignInTextField.layer.cornerRadius = 10
 
         // Do any additional setup after loading the view.
     }
     
-    
+    //Sign in function 
     @IBAction func tappedSignIn(_ sender: UIButton, forEvent event: UIEvent) {
         let loginManager = FirebaseAuthManager()
         let alert = UIAlertController(title: nil, message: "Email/Password cannot be empty", preferredStyle: .alert)

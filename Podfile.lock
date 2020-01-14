@@ -10,6 +10,9 @@ PODS:
     - FirebaseAuth (~> 6.2.3)
   - Firebase/CoreOnly (6.9.0):
     - FirebaseCore (= 6.3.0)
+  - Firebase/Database (6.9.0):
+    - Firebase/CoreOnly
+    - FirebaseDatabase (~> 6.1.0)
   - Firebase/Firestore (6.9.0):
     - Firebase/CoreOnly
     - FirebaseFirestore (~> 1.5.1)
@@ -31,6 +34,10 @@ PODS:
     - GoogleUtilities/Environment (~> 6.2)
     - GoogleUtilities/Logger (~> 6.2)
   - FirebaseCoreDiagnosticsInterop (1.0.0)
+  - FirebaseDatabase (6.1.0):
+    - FirebaseAuthInterop (~> 1.0)
+    - FirebaseCore (~> 6.0)
+    - leveldb-library (~> 1.18)
   - FirebaseFirestore (1.5.1):
     - FirebaseAuthInterop (~> 1.0)
     - FirebaseCore (~> 6.2)
@@ -94,6 +101,7 @@ PODS:
 
 DEPENDENCIES:
   - Firebase/Auth
+  - Firebase/Database
   - Firebase/Firestore
   - Koloda
 
@@ -106,6 +114,7 @@ SPEC REPOS:
     - FirebaseCore
     - FirebaseCoreDiagnostics
     - FirebaseCoreDiagnosticsInterop
+    - FirebaseDatabase
     - FirebaseFirestore
     - GoogleDataTransport
     - GoogleDataTransportCCTSupport
@@ -127,6 +136,7 @@ SPEC CHECKSUMS:
   FirebaseCore: 8b2765c445d40db7137989b7146a3aa3f91b5529
   FirebaseCoreDiagnostics: be4f7a09d02ab305f18de59a470412caddb64c2a
   FirebaseCoreDiagnosticsInterop: 6829da2b8d1fc795ff1bd99df751d3788035d2cb
+  FirebaseDatabase: 518cd94286de2ee999e19383a2a6ae04c81ce993
   FirebaseFirestore: 5ee8bdb959541f0d55352f2d681efb03b9742a43
   GoogleDataTransport: c8617c00e4f3eb9418e42ac0e8ac5241a9d555dd
   GoogleDataTransportCCTSupport: 9f352523e8785a71f6754f51eeff09f49ec19268
@@ -140,6 +150,6 @@ SPEC CHECKSUMS:
   pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
   Protobuf: 67fb42ba613def994e61854de2b3164f13790cc4
 
-PODFILE CHECKSUM: 95775874fd654d0ba29a6cf5aa7b3b1582fd65b2
+PODFILE CHECKSUM: 968a1f3e014b367bec5f75095d2cc98a283cdb4d
 
 COCOAPODS: 1.7.5

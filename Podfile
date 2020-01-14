@@ -9,6 +9,7 @@ target 'AUCConnect' do
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
   pod 'Koloda'
+  pod 'Firebase/Database'
 
   target 'AUCConnectTests' do
     inherit! :search_paths
