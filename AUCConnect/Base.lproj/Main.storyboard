@@ -219,8 +219,8 @@
                                 <rect key="frame" x="0.0" y="132" width="414" height="234"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="New User" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dZG-AD-UvF">
-                                <rect key="frame" x="135" y="156" width="164" height="47"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Last Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dZG-AD-UvF">
+                                <rect key="frame" x="54" y="184" width="306" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="39"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -307,14 +307,23 @@
                                     <action selector="signout:" destination="yEd-PN-ZRC" eventType="touchUpInside" id="OE3-4Y-e7i"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="First Name " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tTo-UG-ulX">
+                                <rect key="frame" x="113" y="132" width="189" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="39"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <viewLayoutGuide key="safeArea" id="boI-NS-KTW"/>
                     </view>
                     <connections>
+                        <outlet property="firstName" destination="tTo-UG-ulX" id="Byv-gb-pMh"/>
+                        <outlet property="lastName" destination="dZG-AD-UvF" id="DaY-LW-ky1"/>
                         <outlet property="profilePic" destination="xJG-EU-nsD" id="L9Q-yP-zb1"/>
                         <outlet property="roundedLogout" destination="BUU-xq-m7B" id="9BI-BE-tsb"/>
-                        <outlet property="userName" destination="dZG-AD-UvF" id="P4E-Vo-pWQ"/>
+                        <outlet property="schoolBackground" destination="6t1-v4-JnJ" id="1nb-qq-K9L"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JXy-vm-xTq" userLabel="First Responder" sceneMemberID="firstResponder"/>
