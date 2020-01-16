@@ -51,15 +51,21 @@ class profileViewController: UIViewController {
             var token2 = token[0].components(separatedBy: delimiter2)
             firstName.text = token2[0].uppercased()
             lastName.text = token2[1].uppercased()
-            //Change Background color based on school 
+            //Change Background color based on school
+            let image0 = UIImage(named: "morehouse")
+            let image1 = UIImage(named: "spelman")
+            let image2 = UIImage(named: "clark")
             if(self.whichColor(testEmail: email!, domain: domainMH) == true){
                 print("HELLO MH USER")
+                schoolBackground.image = image0
             }
             if(self.whichColor(testEmail: email!, domain: domainSP) == true){
                 print("HELLO SP USER")
+                schoolBackground.image = image1
             }
             if(self.whichColor(testEmail: email!, domain: domainCL) == true){
                 print("HELLO CL USER")
+                schoolBackground.image = image2
             }
         }
     }
@@ -75,7 +81,7 @@ class profileViewController: UIViewController {
         
     }
     
-    @IBAction func signout(_ sender: Any) {
+    @IBAction func signout(_ sender: Any, forEvent event: UIEvent) {
         if user != nil {
             do {
                 try Auth.auth().signOut()

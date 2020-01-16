@@ -13,7 +13,7 @@
         <!--Sign In-->
         <scene sceneID="Rac-vH-IWk">
             <objects>
-                <viewController storyboardIdentifier="Sign in" title="Sign In" useStoryboardIdentifierAsRestorationIdentifier="YES" id="MkA-vt-tkk" customClass="signinViewController" customModule="AUCConnect" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="signIn" title="Sign In" useStoryboardIdentifierAsRestorationIdentifier="YES" id="MkA-vt-tkk" customClass="signinViewController" customModule="AUCConnect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zsp-nJ-oq5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -215,7 +215,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2019-09-27 at 3.26.20 PM" translatesAutoresizingMaskIntoConstraints="NO" id="6t1-v4-JnJ">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6t1-v4-JnJ">
                                 <rect key="frame" x="0.0" y="132" width="414" height="234"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -296,17 +296,6 @@
                                 <color key="textColor" red="0.2156862745" green="0.2156862745" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BUU-xq-m7B">
-                                <rect key="frame" x="181" y="609" width="52" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Logout ">
-                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="signout:" destination="yEd-PN-ZRC" eventType="touchUpInside" id="OE3-4Y-e7i"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="First Name " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tTo-UG-ulX">
                                 <rect key="frame" x="113" y="132" width="189" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -314,6 +303,17 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BUU-xq-m7B">
+                                <rect key="frame" x="160" y="608" width="95" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Logout ">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="signout:forEvent:" destination="yEd-PN-ZRC" eventType="touchUpInside" id="s8N-FF-8rQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <viewLayoutGuide key="safeArea" id="boI-NS-KTW"/>
@@ -324,6 +324,7 @@
                         <outlet property="profilePic" destination="xJG-EU-nsD" id="L9Q-yP-zb1"/>
                         <outlet property="roundedLogout" destination="BUU-xq-m7B" id="9BI-BE-tsb"/>
                         <outlet property="schoolBackground" destination="6t1-v4-JnJ" id="1nb-qq-K9L"/>
+                        <segue destination="MkA-vt-tkk" kind="show" id="vwm-5F-sVD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JXy-vm-xTq" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -472,12 +473,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Screen Shot 2019-09-27 at 3.26.20 PM" width="552" height="498"/>
         <image name="auclogo" width="182" height="183"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="ybK-yy-cXB"/>
         <segue reference="e4v-i0-pdx"/>
         <segue reference="Vqa-s6-Prq"/>
+        <segue reference="vwm-5F-sVD"/>
     </inferredMetricsTieBreakers>
 </document>
